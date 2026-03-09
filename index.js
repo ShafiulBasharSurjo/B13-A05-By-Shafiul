@@ -16,6 +16,21 @@ const displayIssues = (issues) => {
 
     issues.forEach(issue => {
 
+        const priority = issue.priority.toUpperCase();
+        let priorityBg = "";
+
+        if(priority === 'HIGH'){
+            priorityBg = 'bg-red-200 text-red-500';
+        }
+
+        else if(priority === 'MEDIUM'){
+            priorityBg = 'bg-yellow-200 text-yellow-500';
+        }
+
+        else{
+            priorityBg = 'bg-green-200 text-green-500';
+        }
+
         const isOpen = issue.status === 'open';
         const border = isOpen ? 'border-green-500' : 'border-purple-500'
         const issueCard = document.createElement("div");
@@ -25,10 +40,10 @@ const displayIssues = (issues) => {
         issueCard.innerHTML = `
                 <div class="flex items-center justify-between">
                     <span>
-                    ${issue.status === "open" ?`<img src="./assets/Open-Status.png" alt=""></img>` : `<img src="./assets/Closed- Status .png" alt=""></img>`}
+                    ${issue.status === "open" ?` <img src="./assets/Open-Status.png" alt=""></img>` : `<img src="./assets/Closed- Status .png" alt=""></img>`}
                         
                     </span>
-                    <span class="priority-badge priority-high">${issue.priority.toUpperCase()}</span>
+                    <span class="${priorityBg} text-[0.5] font-semibold rounded-r-md py-2 px-2">${priority}</span>
                 </div>
     
                 <h3 class="card-title">${issue.title}</h3>
@@ -37,7 +52,6 @@ const displayIssues = (issues) => {
                     <span class="label-badge"><i class="fa-solid fa-bug"></i>BUG</span>
                     <span class="label-badge label-help"> HELP WANTED</span>
                 </div>
-                
                 <div class="flex flex-col text-[0.5] text-gray-400">
                     <span>#${issue.id} by ${issue.author}</span>
                     <span>1/15/2024</span>
