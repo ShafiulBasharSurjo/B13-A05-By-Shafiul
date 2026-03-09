@@ -36,5 +36,24 @@
         </div>
     </header>
 
+    <section class="issuesPage">
+        <div class=" mb-4">
+            <button onclick="loadIssues()" class="btn btn-primary gap-1">All</button>
+            <button onclick="loadIssues" class="btn btn-primary gap-1">Open</button>
+            <button onclick="loadIssues" class="btn btn-primary gap-1">Closed</button>
+        </div>
+        <div class="issuecount">
+            <img src="./assets/Aperture.png" alt="">
+            <p>Issues <br> Track and manage your project issues</p>
+        </div>
+
+        <div id="issue-container" class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
+            <div class="issue-card">
+            </div>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+
 </body>
 </html>

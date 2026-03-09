@@ -1,3 +1,86 @@
 *{
     font-family: "Geist", sans-serif;
 }
+
+.issuesPage{
+    margin: 3.75rem 15.313rem;
+}
+
+.issue-container{
+
+    margin-top: 1rem;
+}
+
+.issuecount{
+    display: flex;
+}
+
+.issue-card p {
+
+    text-align: justify;
+}
+
+.issue-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
+}
+
+
+.status-icon {
+    font-size: 1.2rem;
+}
+
+.icon-open   { color: #22c55e; }
+.icon-closed { color: #a855f7; }
+
+.priority-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: 6px;
+    letter-spacing: 0.05em;
+}
+
+.priority-high   { background-color: #fee2e2; color: #dc2626; }
+
+ .card-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: black;
+    margin: 0;
+    line-height: 1.4;
+} 
+
+.card-desc {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.5;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.label-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    border: 1.5px solid transparent;
+    background-color: #fee2e2;
+    border-color: #fca5a5;
+    color: red;
+}
+
+.label-help {
+    background-color: #fef9c3;
+    border-color: #fde047;
+    color: #a16207;
+}
