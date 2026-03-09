@@ -1,0 +1,13 @@
+What is the difference between var, let, and const?
+ Var is reassignable and redeclarable, let is only reassignable and const is nether.
+
+What is the spread operator (...)?
+ It helps in passing an array or object as individual arguments.
+
+What is the difference between map(), filter(), and forEach()?
+ map() is used to create a new array by changing data. filter() creates an array with elements that follow a set rule. forEach() executes a function for each element.
+What is an arrow function?
+ It's a shorter syntax for writing functions.
+
+What are template literals?
+ Use of bachticks in string creation.
